@@ -29,24 +29,30 @@
 </head>
 
 <style>
-  .sponsor_logo img {
+  .sponsor_logo_left img {
     width: 100%;
     height: auto;
+    -ms-transition: 0.4s ease-in-out;
+   -webkit-transition: 0.4s ease-in-out;
+   transition: 0.4s ease-in-out;
   }
-  .sponsor_logo img:hover{
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    perspective: 1000px;
+  .sponsor_logo_left img:hover{
+    -ms-transform: rotate(-15deg); /* IE 9 */
+    -webkit-transform: rotate(-15deg); /* Chrome, Safari, Opera */
+    transform: rotate(-15deg);
   }
 
-  .sponsor_logo_Air img {
+  .sponsor_logo_right img {
     width: 100%;
     height: auto;
+    -ms-transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
-  .sponsor_logo_Air img:hover{
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    perspective: 1000px;
+  .sponsor_logo_right img:hover{
+    -ms-transform: rotate(15deg); /* IE 9 */
+    -webkit-transform: rotate(15deg); /* Chrome, Safari, Opera */
+    transform: rotate(15deg);
   }
 
 
@@ -84,19 +90,6 @@
     color: red;
   }
 
-  @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
 </style>
 
 <!-- Shows display the intro of the sponsor -->
@@ -228,7 +221,7 @@
 
       <div class="row justify-content-around" style="padding-bottom: 80px;">
 
-        <div class="col-md-4 col-6 col-sm-6 sponsor_logo wow fadeInDown " ata-wow-duration="1s" data-wow-delay=".3s">
+        <div class="col-md-4 col-6 col-sm-6 sponsor_logo_left wow fadeInDown " ata-wow-duration="1s" data-wow-delay=".3s">
           <img src="img/sponsor/zhangshangNZ1.png" class="img-fluid" alt=""
             onclick="showNHideDescription('zhangshangNZ','description_container_row_1','description_display_row_1')" />
         </div>
@@ -246,7 +239,7 @@
           </p>
         </div>
 
-        <div class="col-md-3 col-5 col-sm-6 sponsor_logo wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
+        <div class="col-md-3 col-5 col-sm-6 sponsor_logo_right wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
           <img src="img/sponsor/inDepth.jpg" alt=""
             onclick="showNHideDescription('InDepth','description_container_row_1','description_display_row_1')" />
         </div>
@@ -259,7 +252,7 @@
       </div>
 
       <div class="row justify-content-around" >
-        <div class="col-md-4 col-6 col-sm-5 sponsor_logo wow fadeInDown" ata-wow-duration="1s"
+        <div class="col-md-4 col-6 col-sm-5 sponsor_logo_left wow fadeInDown" ata-wow-duration="1s"
           data-wow-delay=".3s">
           <img src="img/sponsor/cpa.jpg" alt=""
             onclick="showNHideDescription('cpa','description_container_row_2','description_display_row_2')"
@@ -274,7 +267,7 @@
           </p>
         </div>
 
-        <div class="col-md-5 col-6 col-sm-6  sponsor_logo_Air wow fadeInDown" ata-wow-duration="1s"
+        <div class="col-md-5 col-6 col-sm-6  sponsor_logo_right wow fadeInDown" ata-wow-duration="1s"
           data-wow-delay=".3s">
           <img src="img/sponsor/airchina.png" alt=""
             onclick="showNHideDescription('airchina','description_container_row_2','description_display_row_2')" />
@@ -296,7 +289,7 @@
       </div>
 
       <div class="row justify-content-center" style="padding-bottom: 80px;">
-        <div class="col-md-4 col-6 col-sm-6 sponsor_logo wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s"
+        <div class="col-md-4 col-6 col-sm-6 sponsor_logo_left wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s"
           style="padding-top: 50px;">
           <img src="img/sponsor/skyTower.jpg" alt=""
             onclick="showNHideDescription('skyTower','description_container_row_3','description_display_row_3')" />
@@ -335,7 +328,7 @@
       <div class='container'>
         <div class="row justify-content-center align-items-end" style="padding-bottom: 10px;">
 
-          <div class="col-md-3 col-5 col-sm-4 sponsor_logo wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
+          <div class="col-md-3 col-5 col-sm-4 sponsor_logo_left wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
             <img src="img/sponsor/giga.jpg" alt=""
               onclick="showNHideDescription('giga','description_contri_container_1','display_contri_container_1')" />
             <div id="giga" style="display: none;">
@@ -346,7 +339,7 @@
               </p>
             </div>
           </div>
-          <div class="col-md-3 col-5 col-sm-4 sponsor_logo wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
+          <div class="col-md-3 col-5 col-sm-4 sponsor_logo_right wow fadeInDown" ata-wow-duration="1s" data-wow-delay=".3s">
             <img src="img/sponsor/empire.jpg" alt=""
               onclick="showNHideDescription('Empire','description_contri_container_1','display_contri_container_1')" />
           </div>
