@@ -157,6 +157,7 @@
                                                     <li><a href="pn.html">Professional networking</a></li>
                                                 </ul>
                                             </li>
+                                            <li><a id="mobileNavButton" href="https://nzcsa.wdcc.co.nz" style="display: none;">Join Us</a></li>
 
                                         </ul>
                                     </nav>
@@ -166,13 +167,14 @@
                                 <div class="buy_tkt">
                                     <div class="book_btn d-none d-lg-block">
                                         <a
-                                            href="https://docs.google.com/forms/d/e/1FAIpQLSdMPe0FfRsWNF2iE6Sr6YJoTE4wxZ-UpWzRjtj2CQJUaC-FZA/viewform?usp=sf_link">Join
+                                            href="https://nzcsa.wdcc.co.nz">Join
                                             Us</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
+                                <div class="mobile_menu d-block d-lg-none">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -532,6 +534,15 @@
 
 
         <script src="js/main.js"></script>
+        <script>
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+                // true for mobile device
+                document.getElementById('mobileNavButton').style.display = 'block';
+            }else{
+                // false for not mobile device
+                document.getElementById('mobileNavButton').style.display = 'none';       
+            }
+        </script>
 </body>
 
 </html>
